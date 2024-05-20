@@ -17,3 +17,11 @@ nav a {
   font-style: bold;
   background-color: green;
 }
+nav a:hover {
+  background-color: blue;
+  transition: 0.5s;
+}
+.LinkedIn:hover {
+  background-color: green;
+  transition: 0.5s;
+}
