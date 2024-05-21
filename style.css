@@ -25,3 +25,7 @@ nav a:hover {
   background-color: green;
   transition: 0.5s;
 }
+img:hover {
+  border: 3px solid blue;
+  transition: 0.5s;
+}
