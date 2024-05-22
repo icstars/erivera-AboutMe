@@ -8,6 +8,9 @@ button {
 img {
   border-radius: 50%;
 }
+nav {
+  padding-bottom: 10px;
+}
 nav a {
   text-decoration: none;
   color: pink;
@@ -21,11 +24,58 @@ nav a:hover {
   background-color: blue;
   transition: 0.5s;
 }
+
 .LinkedIn:hover {
-  background-color: green;
-  transition: 0.5s;
+  animation: bounce 0.1s;
+  animation-iteration-count: infinite;
 }
+
 img:hover {
   border: 3px solid blue;
   transition: 0.5s;
+  animation: changeIMG 2s;
+}
+
+.esp {
+  animation: changeIMG 10s ease;
+  animation-iteration-count: infinite;
+  width: 450px;
+  height: 450px;
+  border: 2.5px solid blue;
+  background-size: cover;
+  border-radius: 50%;
+  animation-iteration-count: infinite;
+}
+
+.slideIn {
+  animation: slideIn 5s ease;
+}
+@keyframes changeIMG {
+  from {
+    background-image: url("images/ColorfulHeadshot.jpg");
+  }
+  to {
+    background-image: url("images/1stDay04.01.jpeg");
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    background-color: green;
+  }
+  50% {
+    background-color: pink;
+  }
+  100% {
+    background-color: green;
+  }
 }
